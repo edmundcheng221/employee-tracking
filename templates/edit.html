@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block container %}
+<h2>Update</h2>
+<p>Edit a record in the MongoDB database collection.</p>
+<form method="POST" action="{{ url_for('edit_post', mongoid=mongoid) }}">
+  <p>
+    Name:
+    <input type="text" id="fname" name="fname" value="{{doc.name}}" /><br />
+  </p>
+  <p>
+    Email:
+    <input type="text" id="femail" name="femail" value="{{doc.email}}" /><br />
+  </p>
+  <p>
+    Phone:
+    <input type="text" id="fphone" name="fphone" value="{{doc.phone}}" /><br />
+  </p>
+  <p>
+    <a id="cancel" href="{{ url_for('read')}}">Cancel</a>
+    <input type="submit" name="post-btn" value="Save" />
+  </p>
+</form>
+{% endblock %}

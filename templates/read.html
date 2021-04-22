@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h2>Employee Database</h2>
+<p>This page shows information about employees at some company.
+
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Action</td>
+          </tr>
+    
+        
+    {% for doc in docs %}
+
+
+            <tr>
+              <td>{{doc.name}}</td>
+              <td>{{doc.email}}</td>
+              <td>{{ doc.phone }}</td>
+              <td><a id="edit" href="{{ url_for('edit',mongoid=doc._id)}}">Edit</a>  <a id="delete" href="{{ url_for('delete',mongoid=doc._id)}}">Delete</a></td>
+            </tr>
+            
+
+    {%endfor%}
+</table>
+
+</p>
+{% endblock %}

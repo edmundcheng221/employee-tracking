@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edmund's Application</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      
+        <header>
+          <h1 id="header1">Employee Management Application</h1>
+          <div id="contain">
+          <p>
+              <a class="button" href="{{ url_for('home')}}">Homepage</a>
+              <a class="button" href="{{ url_for('read')}}">Employees</a>
+              <a class="button" href="{{ url_for('create')}}">Add New Employee</a>
+
+          </p>
+          </div>
+        </header>
+      <main>{% block container %} {% endblock %}</main>
+      <footer>
+        <p>
+          The source code for this example app is
+          <a href="https://github.com/database-design-assignments/web-app-edmund-cheng"
+            >available on Github</a
+          >.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.container {
+  border: 2px solid;
+  width: 50%;
+  margin: 0 auto;
+}
+
+header,
+footer,
+main {
+  padding: 20px;
+}
+
+header,
+main {
+  border-bottom: 2px solid;
+  margin-bottom: 5px;
+}
+
+p.post {
+  font-size: 12px;
+}
+
+footer {
+  margin-bottom: 5px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: blue;
+}
+
+
+#contain {
+  display: flex;
+  justify-content: center;
+}
+
+#header1 {
+  text-align: center;
+}
+
+#edit {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+#delete {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#edit:hover, #delete:hover, #cancel:hover {
+  background-color: orange;
+}
+
+body {
+  background-color:lightblue;
+}
+
+#cancel {
+  background-color: red;
+  padding: 3px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+}
